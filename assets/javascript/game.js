@@ -37,7 +37,7 @@ function resetHTML() {
 	$(".score-number").html(counter); //prints score in html
 	$(".horcrux-images").empty();
 };
-resetHTML();
+
 function totalReset() {
 	randomNumber();
 	counter = 0;
