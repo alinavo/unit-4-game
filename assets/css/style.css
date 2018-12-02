@@ -34,7 +34,8 @@ body {
 	background-color: white;
 	border-style: solid;
 	border-color: black;
-	border-width: 2px;
+	border-width: 4px;
+	color: black;
 }
 
 .win-lose-counter {
@@ -42,6 +43,7 @@ body {
 	border-style: solid;
 	border-color: black;
 	border-width: 4px;
+	color: black;
 }
 
 .horcrux-images {
@@ -52,12 +54,19 @@ body {
 }
 
 .total-score {
-	color: white;
-	background-color: #4aaaa5;
+	font-size: 12px;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 4px;
+	color: black;
 }
 
 .score-number {
-	color: white;
-	background-color: #4aaaa5;
 	font-size: 30px;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 4px;
+	color: black;
 }
