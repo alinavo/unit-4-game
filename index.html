@@ -153,32 +153,49 @@ function totalReset() {
 };
 
 
+// Running Code
+randomNumber();
+resetHTML();
+resetHorcruxes();
 
 // Click Functions
 function horcruxClick() {
 	//attr returns first value of selected html element
 	counter += parseInt($(this).attr("value"));
 	$(".score-number").html(counter);
-	if (counter == number) {
+	if (counter === number) {
 		wins++;
 		totalReset();
 	} 
 	else if (counter > number) {
 		losses++;
-		totalReset();
-	};
-};
+    totalReset();
+    }
+  };
+  
+//Having trouble here because the value of the horcrux changes with every click. 
+
+// if (playersCurrentNumber === computersSetNumber) {
+// wins++;
+// resetgame();
+
+// } else if (playersCurrentNumber > computersSetNumber {
+// losses++;
+// resetgame();
+// } else {
+
+// playersCurrentNumber = playersCurrentNumber + horcruxNumber;
+
+// }
+
+
+  //
+
 
 //click for every horcrux
 $(document).on("click", ".horcruxes", horcruxClick);
 
 
-// Running Code
-randomNumber();
-
-
-resetHTML();
-resetHorcruxes();
 
 
 
