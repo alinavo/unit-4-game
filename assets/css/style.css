@@ -1,14 +1,16 @@
 
 body {
-	/* background-image: url("../images/seigaiha.png"); */
+	background-image: url("../images/castle.jpg"); 
+	background-repeat: no-repeat;
+	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
 }
 
 .heading {
-	background-color: pink;
 	color: white;
 	text-align: center;
+	margin: 40px;
 }
 
 
@@ -20,6 +22,7 @@ body {
 
 .panel-body {
 	font-size: 18px;
+	opacity: 50;
 }
 
 .voldy {
@@ -44,6 +47,8 @@ body {
 .horcrux-images {
 	margin-top: 30px;
 	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .total-score {
