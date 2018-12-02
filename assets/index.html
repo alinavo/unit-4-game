@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!--Added link to Reset Style-->
+	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">	
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="../assets/javascript/game.js"></script>
+
+
+</head>
+<body>
+	
+<div class="jumbotron">
+    <h1 class="text-center">Defeat He-Who-Must-Not-Be-Named</h1>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+	            	<h3 class="panel-title">How to Play!</h3>
+	          	</div>
+	          	<div class="panel-body">
+					<p>
+						At the start of the game, you will be given a random number. This number will represent the number of points needed to defeat Lord Voldemrt. 
+					</p>
+					<p>
+						Pictured are four horcruxes, items that will help defeat the Dark Lord.  By clicking on a horcrux, you will add a specfiic amount of points. The points will go towards the points needed to win. 
+					</p>
+					<p>
+						Lord Voldemort will be defeated when your total score matches the random number. However, he will still be in power if your total score goes above the random number.
+					</p>
+					<p>
+						Note, that the value of each horcrux is hidden from you until it is clicked.
+					</p>
+					<p>
+            As the game restarts, the value of the horcruxes will change. 
+          </p>
+					</p>
+				</div>
+			</div>
+    </div>
+  </div>
+  <div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-4 target-number">
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4 win-lose-counter">
+          <p>WINS:</p>
+          <p>LOSSES:</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 horcrux-images">
+          <img class= "horcrux" src="images/locket.jpg"
+          value="2" height="150">
+          <img class= "horcrux" src="images/ring.jpg"
+          value="2" height="150">
+        </div>
+          <div class="col-md-4 horcrux-images">
+          <img class= "horcrux" src="images/diadem.jpg"
+          value="2" height="150">
+          <img class= "horcrux" src="images/cup.jpg"
+          value="2" height="150">
+        </div>
+        <div class="col-md-2">
+          </div>
+        <div class="col-md-2 total-score">
+            <p>
+              TOTAL SCORE:
+            </p>
+          </div>
+        </div>
+        
+			<div class="row">
+				<div class="col-md-4 score-number">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+</body>
+</html>
