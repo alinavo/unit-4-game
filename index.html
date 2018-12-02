@@ -67,8 +67,12 @@
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-2 target-number">
+          <p>
+              TARGET:
+            </p>
       </div>
       <div class="col-md-2 score-number">
+         
       </div>
       <div class="col-md-1"></div>
       <div class="col-md-2 total-score">
@@ -85,15 +89,13 @@
     <!-- Horcrux Images -->
     <div class="row">
     
-         <div class="col-md-12 horcrux-images">
-          <!-- <img class="horcrux" src="assets/images/locket.jpg" height="150">
-        
-          <img class="horcrux" src="assets/images/ring.jpg" height="150">
-      
-          <img class="horcrux" src="assets/images/diadem.jpg" height="150">
-      
-          <img class="horcrux" src="assets/images/cup.jpg" height="150">  --> 
+         <div class="col-md-3">
         </div>
+        <div class="col-md-6 horcrux-images">
+          </div>
+          <div class="col-md-3">
+            </div>
+          
     
 
 
@@ -129,7 +131,7 @@ function resetHorcruxes() {
 		// image from array
 		horcrux.attr("src", images[i]);
 		// adds random value
-		horcrux.attr("value", (Math.floor(Math.random() * 12) + 1));
+    horcrux.attr("value", (Math.floor(Math.random() * 12) + 1));
 		horcrux.attr("height", "100");
 		$(".horcrux-images").append(horcrux);
 	};
@@ -139,7 +141,7 @@ function resetHorcruxes() {
 function resetHTML() {
 	$(".target-number").html(number); //prints number in html
 	$(".win-lose-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
-	$(".score-number").html(counter); //prints score in html
+	$(".score-number").html("" +counter ); //prints 0 score in html to start
 	$(".horcrux-images").empty();
 };
 
@@ -150,12 +152,6 @@ function totalReset() {
 	resetHorcruxes();
 };
 
-// Running Code
-
-randomNumber();
-resetHTML();
-resetHorcruxes();
-
 
 
 // Click Functions
@@ -163,11 +159,11 @@ function horcruxClick() {
 	//attr returns first value of selected html element
 	counter += parseInt($(this).attr("value"));
 	$(".score-number").html(counter);
-	if (counter) {
+	if (counter == number) {
 		wins++;
 		totalReset();
-	}
-	else if (counter) {
+	} 
+	else if (counter > number) {
 		losses++;
 		totalReset();
 	};
@@ -175,6 +171,18 @@ function horcruxClick() {
 
 //click for every horcrux
 $(document).on("click", ".horcruxes", horcruxClick);
+
+
+// Running Code
+randomNumber();
+
+
+resetHTML();
+resetHorcruxes();
+
+
+
+
 </script>
 
 
