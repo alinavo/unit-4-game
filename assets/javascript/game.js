@@ -12,10 +12,10 @@ var images = ["../assets/images/cup.jpg", "../assets/images/diadem.jpg", "../ass
 		number = Math.floor(Math.random() * 102) + 19;
 	}
 
-	function resethorcruxes () {
+	function resetHorcruxes () {
 		for (var i = 0; i < images.length; i++) {
-			var horcrux = $("<img>");
-			horcrux.addClass("horcrux");
+			var horcrux = $("<img>"); 
+			horcrux.addClass("horcrux"); //not sure if I need this
 			horcrux.attr("src", images[i]);
 			horcrux.attr("value", (Math.floor(Math.random() * 12) + 1));
 			horcrux.attr("height", "100");
@@ -34,17 +34,17 @@ var images = ["../assets/images/cup.jpg", "../assets/images/diadem.jpg", "../ass
 		randomNumer ();
 		counter = 0;
 		resetHTML ();
-		resethorcruxes ();
+		resetHorcruxes ();
 	}
 
 // Running Code
 
-	// Sets page up to run random number functin
+// Sets page up to run random number functin
   randomNumer();
-  //runs random number function
+//runs random number function
   resetHTML (); 
-  //RESET RESET RESET !!!!!!
-	resethorcruxes ();
+//RESET RESET RESET !!!!!!
+ resetHorcruxes ();
 
 // click functions for horcruxs to add numbers
 	function horcruxClick () {
