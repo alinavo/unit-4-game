@@ -146,7 +146,6 @@ function resetHTML() {
 };
 
 function totalReset() {
-	randomNumber();
 	counter = 0;
 	resetHTML();
 	resetHorcruxes();
@@ -160,17 +159,17 @@ resetHorcruxes();
 
 // Click Functions
 function horcruxClick() {
-	//attr returns first value of selected html element
-	counter += parseInt($(this).attr("value"));
-	$(".score-number").html(counter);
-	if (counter === number) {
-		wins++;
-		totalReset();
-	} 
-	else if (counter > number) {
-		losses++;
-    totalReset();
-    }
+		//attr returns first value of selected html element
+		counter += parseInt($(this).attr("value"));
+		$(".score-number").html(counter);
+		if (counter === number) {
+			wins++;
+			totalReset();
+		}
+		else if (counter > number) {
+			losses++;
+			totalReset();
+		};
   };
   
 //Having trouble here because the value of the horcrux changes with every click. 
