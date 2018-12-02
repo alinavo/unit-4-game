@@ -4,7 +4,7 @@ var number = "";
 var wins = 0;
 var losses = 0;
 var counter = 0;
-var images = ["assets/images/locket.jpg", "assets/images/cup.jpg", "assets/images/diadem.jpg", "assets/images/ring.jpg"];
+var images = ["<img src = assets/images/locket.jpg>", "assets/images/cup.jpg", "assets/images/diadem.jpg", "assets/images/ring.jpg"];
 
 // Functions 
 function randomNumber() {

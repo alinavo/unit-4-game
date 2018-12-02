@@ -38,9 +38,9 @@ body {
 }
 
 .win-lose-counter {
-	background-color: #9CE7F8;
+	background-color: white;
 	border-style: solid;
-	border-color: #ddd;
+	border-color: black;
 	border-width: 4px;
 }
 
