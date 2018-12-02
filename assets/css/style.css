@@ -14,7 +14,8 @@ body {
 }
 
 .horcrux {
-	padding: 10px;
+	padding: 40px;
+
 }
 
 
@@ -32,7 +33,9 @@ body {
 .voldy {
 	float: left;
 	margin: 10px;
+	height: 200px;
 }
+
 .target-number {
 	font-size: 30px;
 	background-color: white;
@@ -57,14 +60,6 @@ body {
 	margin-right: 0;
 }
 
-.total-score {
-	font-size: 12px;
-	background-color: white;
-	border-style: solid;
-	border-color: black;
-	border-width: 4px;
-	color: black;
-}
 
 .score-number {
 	font-size: 30px;

@@ -34,9 +34,9 @@
             <h3 class="panel-title">How to Play!</h3>
           </div>
           <div class="panel-body">
-            <div class="voldy">
-              <img src="assets/images/freehugs.jpg">
-            </div>
+           
+              <img src="assets/images/freehugs.jpg" class= "voldy">
+          
             <br>
             <p>
 
@@ -67,19 +67,10 @@
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-2 target-number">
-          <p>
-              TARGET:
-            </p>
-      </div>
-      <div class="col-md-2 score-number">
-         
       </div>
       <div class="col-md-1"></div>
-      <div class="col-md-2 total-score">
-        <p>
-          TOTAL SCORE:
-        </p>
-      </div>
+      <div class="col-md-2 score-number">
+        </div>
       <div class="col-md-1"></div>
       <div class="col-md-2 win-lose-counter">
       </div>
@@ -140,7 +131,7 @@ function resetHorcruxes() {
 //reset HTML page
 function resetHTML() {
 	$(".target-number").html(number); //prints number in html
-	$(".win-lose-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
+	$(".win-lose-counter").html("<p>WINS: " + wins + "</p>" + "<p>LOSSES: " + losses + "</p>");
 	$(".score-number").html("" +counter ); //prints 0 score in html to start
 	$(".horcrux-images").empty();
 };
@@ -184,12 +175,6 @@ function horcruxClick() {
 // } else {
 
 // playersCurrentNumber = playersCurrentNumber + horcruxNumber;
-
-// }
-
-
-  //
-
 
 //click for every horcrux
 $(document).on("click", ".horcruxes", horcruxClick);
